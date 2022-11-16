@@ -44,6 +44,8 @@ main{
     display:grid;
     grid:140px 1fr / 100%;
     row-gap:20px;
+    background:var(--jet);
+    color:white;
 }
 #account{
     /* background:blue; */
@@ -152,6 +154,11 @@ a{
     place-self: center;
  
 }
+input{
+    font-size:1.4rem;
+    box-sizing:border-box;
+    padding:15px;
+}
 #searchIcon{
     color:grey;
     font-size: 40px;
@@ -236,6 +243,7 @@ a{
     grid:50px 1fr/ 100%;
     font-family: 'Bebas Neue';
     height:100%;
+    background:var(--mandarin);
    
    }
    .calculations{
@@ -271,8 +279,8 @@ a{
   
     display:flex;
     place-items: center;
-    background: red;
-    color:white;
+    background: white;
+    color:black;
     font-size:1.5rem;
     box-sizing: border-box;
     padding-left:10px;
@@ -318,11 +326,24 @@ a{
    }
    .empty{
 
-    background:url(inbox.png);
-    height:500px;
-    width:500px;
-    background-size: contain;
+    background:url(https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80);
+    height:100%;
+    width:100%;
+    background-size: cover;
     
+   }
+   .empty p {
+    height:100%;
+    display:flex;
+    place-content: center;
+    place-items: center;
+    width:100%;
+    padding:0;
+    margin:0;
+    font-family:'Cabin Sketch';
+    font-size:8rem;
+    color:white;
+ 
    }
 
    .dashboardItemContent{
@@ -388,7 +409,10 @@ a{
     display:grid;
     grid:70px repeat(auto-fill,max-content) / 100%;
     place-content: start;
-    place-items: start;
+    place-items: stretch;
+    background:var(--metallic-seaweed);
+    
+    
    }
    #status{
     height:100%;
@@ -408,6 +432,7 @@ a{
     font-size:1.5rem;
     padding:10px;
     box-sizing: border-box;
+    
    }
    .contactPic{
     width:80px;
@@ -431,11 +456,12 @@ a{
     width:100%;
     display:grid;
     grid:100% / 1fr 2fr;
-    place-content: center;
-    place-items:  center;
+    place-content: stretch;
+    place-items:  stretch;
     font-family: 'Bebas Neue';
     gap:20px;
     border-bottom:1px solid grey;
+    background:var(--alabaster);
 
    }
    #tc,#bc{
@@ -579,8 +605,7 @@ a{
     font-size:50px;
 }
 .ll{
-    position:fixed;
-    top:50%;
+   
     width:25rem;
     height:4rem;
     border-radius:100rem;
@@ -595,7 +620,19 @@ a{
 .send:hover{
     animation:wheel 1s;
 }
-
+#sendNew{
+    font-family: 'Abril Fatface';
+    font-size:1.4rem;
+    width:50%;
+    background:var(--metallic-seaweed);
+    display:flex;
+    place-content: center;
+    place-items: center;
+    place-self: center;
+    color:white;
+    box-sizing: border-box;
+    padding:1rem;
+}
 @keyframes wheel{
     from{
         transform:rotateZ(0deg);
@@ -616,4 +653,47 @@ a{
 }
 .indicatie{
     font-size:0.9rem;
+}
+.form{
+    width:50rem;
+    height:60rem;
+ background: var(--jet);
+    background-blend-mode: multiply;
+
+
+
+
+
+    display:grid;
+    grid:repeat(2,max-content) / 100%;
+    place-content: center;
+    place-items: start;
+    row-gap:5rem;
+
+}
+.field{
+    width:max-content;
+    display:grid;
+    grid:100% / repeat(2,50%);
+    column-gap:2rem;
+    place-content: center;
+    place-items: center;
+}
+.field label{
+    color:var(--alabaster);
+    font-family: 'Abril Fatface';
+    font-size:1.6rem;
+}
+#send{
+    width:40%;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    place-self: center;
+    background-color: var(--metallic-seaweed);
+    color:var(--alabaster);
+    box-sizing: border-box;
+    padding:1rem;
+    font-family: 'Abril Fatface';
+
 }
